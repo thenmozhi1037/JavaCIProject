@@ -1,3 +1,4 @@
+// CI pipeline automatic trigger test
 package com.lnt;
 
 public class App {
