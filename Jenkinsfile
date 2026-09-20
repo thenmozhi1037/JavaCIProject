@@ -29,7 +29,7 @@ pipeline {
         stage('SonarQube') {
             steps {
                 withSonarQubeEnv('SonarQube') {
-                    bat 'mvn verify sonar:sonar -Dsonar.projectKey=JavaCIProject'
+                    bat 'mvn verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=JavaCIProject'
                 }
             }
         }
